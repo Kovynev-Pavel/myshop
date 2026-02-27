@@ -53,7 +53,7 @@ a:hover{
     font-size: 19px;
     color: wheat;
 }
-.pon{
+.avtor{
     width: 510px;
     height: 470px;
 }
@@ -93,11 +93,11 @@ form button{
 textarea {
     height: 150px;
 }
-.pon1{
+.new_rewiew{
     width: 600px;
     height: 480px;
 }
-.pon2{
+.tovars{
     float: left;
     text-align: center;
     display: inline;
@@ -113,12 +113,12 @@ p{
     font-size: 18px;
     margin-top: 10px;
 }
-.pon3{
+.rewiews{
     float: left;
     text-align: left;
     margin-left: 13px;
 }
-.pon4{
+.basket{
     float: left;
     text-align: center;
     display: inline;
@@ -130,7 +130,7 @@ p{
     height: 660px;
     background: wheat;
 }
-.pon5{
+.quantity{
     width: 90px;
     margin-right: 40px;
 }

@@ -12,7 +12,7 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <form class="pon1" action="{% url 'rewiew' %}" method="post"> {# rewiew - url адрес, при котором запускается функция rewiew #}
+    <form class="new_rewiew" action="{% url 'rewiew' %}" method="post"> {# rewiew - url адрес, при котором запускается функция rewiew #}
         {% csrf_token %}
         <div class="form-group">
             <label class="small nb-1" for="{{ form.first_name.id_for_label }}">Имя</label><br>

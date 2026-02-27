@@ -7,7 +7,7 @@
     {% if products %}
         <h1>{{ category.name }}</h1> {# переменная с нужной категорией товаров #}
         {% for product in products %} {# вывод товаров с помощью цикла если они есть #}
-            <div class="pon2">
+            <div class="tovars">
                 <img src="{{ product.image.url }}" alt=""><br> {# изображение товара #}
                 <p>{{ product.model }}</p><br> {# модель товара #}
                 <p>{{ product.price }} руб.</p> {# цена товара #}
