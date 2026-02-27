@@ -11,7 +11,7 @@
                 <img src="{{ product.image.url }}" alt=""><br> {# изображение товара #}
                 <p>{{ product.model }}</p><br> {# модель товара #}
                 <p>{{ product.price }} руб.</p> {# цена товара #}
-                <a class="btn btn-warning" href="{% url 'basket_add' product.id %}">Добавить в корзину</a> {# ссылка на функцию basket_add, которая добавляет товар в корзину #}
+                <a href="{% url 'basket_add' product.id %}"><button>Добавить в корзину</button>></a> {# ссылка на функцию basket_add, которая добавляет товар в корзину #}
             </div>
         {% endfor %} {# конец тела цикла #}
     {% else %}

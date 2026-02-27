@@ -13,6 +13,7 @@ class Rewiew(models.Model):  # Модель базы данных с отзыв�
     email = models.EmailField(verbose_name='Электронная почта', blank=True, max_length=254)
     first_name = models.CharField(verbose_name='Имя', blank=True,  max_length=20)
     content = models.TextField(verbose_name='Отзыв', blank=True, null=True, max_length=500)
+    data = models.DateTimeField(auto_now=True)
 
     def __str__(self):  # В названии объекта базы данных будет имя пользователя
         return self.first_name
