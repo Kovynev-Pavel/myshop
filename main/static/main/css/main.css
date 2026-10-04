@@ -12,9 +12,10 @@ main{
     font-weight: bold;
     display: inline-block;
     padding-top: 35px;
+}
+nav{
     position: sticky;
 }
-
 aside{
     height: 864px;
     width: 14%;
@@ -34,7 +35,7 @@ aside{
     text-align: center;
 }
 aside a{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: block;
     color: white;
 }
@@ -142,3 +143,4 @@ img{
     width: 405px;
     height: 400px;
 }
+
