@@ -15,11 +15,11 @@
         {% csrf_token %}
         <h1>Авторизация</h1>
         <div class="form-group">
-            <label class="small nb-1" for="{{ form.username.id_for_label }}">Имя пользователя</label><br>
+            <label class="bigsection" for="{{ form.username.id_for_label }}">Имя пользователя</label><br>
             {{ form.username }} {# поле для ввода имени пользователя #}
         </div><br>
         <div class="form-group">
-             <label class="small nb-1" for="{{ form.password.id_for_label }}">Пароль</label><br>
+             <label class="bigsection" for="{{ form.password.id_for_label }}">Пароль</label><br>
              {{ form.password }} {# поле для ввода пароля #}
         </div><br>
         <button class="btn btn-warning" type="submit">Авторизоваться</button><br>
