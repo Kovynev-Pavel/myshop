@@ -3,9 +3,14 @@
 {% block title %} {{ category.name }} {% endblock %}
 
 {% block content %}
+    <aside>
+        {% for category in categories %} {# вывод всех категорий с помощью цикла #}
+            <a href="{{ category.get_absolute_url }} {# функция, дающая индекс категориям #}">{{ category.name }}</a>{# название категории #}
+        {% endfor %}
+    </aside>
     {# вывод товаров на страницу, если они есть #}
     {% if products %}
-        <h1>{{ category.name }}</h1> {# переменная с нужной категорией товаров #}
+        <h1 class="katalog">{{ category.name }}</h1> {# переменная с нужной категорией товаров #}
         {% for product in products %} {# вывод товаров с помощью цикла если они есть #}
             <div class="tovars">
                 <img src="{{ product.image.url }}" alt=""><br> {# изображение товара #}
@@ -15,6 +20,6 @@
             </div>
         {% endfor %} {# конец тела цикла #}
     {% else %}
-        <h1>Таких товаров ещё нет</h1>
+        <h1 class="katalog">Таких товаров ещё нет</h1>
     {% endif %}
 {% endblock %}
